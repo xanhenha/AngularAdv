@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 
 @Component({
   selector: 'app-header',
@@ -7,5 +7,12 @@ import { Component } from "@angular/core";
 })
 
 export class HeaderComponent {
+
+  @Output() choosen = new EventEmitter<string>();
+
+  showMenu(menu) {
+    this.choosen.emit(menu);
+    console.log(menu)
+  }
 
 }
