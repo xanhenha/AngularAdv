@@ -1,0 +1,10 @@
+.invalid {
+  background-color: rgb(255, 198, 198);
+  color: red;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.ng-invalid.ng-touched {
+  border-color: rgb(255, 198, 198);
+}
